@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/pointsCrudFragment">
+
+    <fragment
+        android:id="@+id/pointsCrudFragment"
+        android:name="ru.netology.MapsMarker.ui.PointsCrudFragment"
+        android:label="PointsCrudFragment" >
+        <action
+            android:id="@+id/action_pointsCrudFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_pointsCrudFragment_to_fragmentNewPoint"
+            app:destination="@id/fragmentNewPoint" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.netology.MapsMarker.ui.MapsFragment"
+        android:label="MapsFragment" >
+        <action
+            android:id="@+id/action_mapsFragment_to_fragmentNewPoint"
+            app:destination="@id/fragmentNewPoint" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNewPoint"
+        android:name="ru.netology.MapsMarker.ui.FragmentNewPoint"
+        android:label="FragmentNewPoint" >
+        <action
+            android:id="@+id/action_fragmentNewPoint_to_pointsCrudFragment"
+            app:destination="@id/pointsCrudFragment" />
+    </fragment>
+</navigation>

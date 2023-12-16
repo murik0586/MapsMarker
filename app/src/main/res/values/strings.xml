@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Markers</string>
+    <string name="title_point">Title point</string>
+    <string name="point_description">Description</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+</resources>
